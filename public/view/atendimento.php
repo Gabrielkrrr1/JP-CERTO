@@ -420,11 +420,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
 
         <!-- Página 3 -->
-        <div class="form-step" id="step3" style="margin: 20px">
+        <div class="form-step col-md-8 justify-content-center" id="step3" style="margin-left: 400px">
             <h5>Resumo</h5>
-            <div id="resumo"></div>
+            <div class="col-8" id="resumo">
             <button type="button" class="btn btn-secondary btn-prev btn-sec">Anterior</button>
-            <button type="submit" class="btn btn-light btn-next btn-prim">Confirmar</button>
         </div>
 
     </form>

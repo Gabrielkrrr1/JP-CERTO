@@ -21,9 +21,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="atendimento.php">Atendimento</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Relatórios</a>
-                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#logoutModal" href="#" tabindex="-1" aria-disabled="true">
                         <span class="material-symbols-outlined">logout</span>

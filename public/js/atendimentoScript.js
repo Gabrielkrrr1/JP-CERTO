@@ -113,7 +113,7 @@ function isNumberKey(evt) {
 
 // Mostrar resumo dos dados
 function mostrarResumo() {
-  const resumoDiv = document.getElementById("resumo")
+  const resumoDiv = document.getElementById("step3")
   const dados = coletarDadosFormulario()
 
   let html = `
@@ -148,13 +148,20 @@ function mostrarResumo() {
       </div>
     </div>
     <div style="text-align: center; margin-top: 20px;">
-      <button type="submit" class="btn btn-success">Confirmar Atendimento</button>
+      <button type="button" class="btn btn-secondary btn-prev btn-sec" onclick="voltarPasso()">Anterior</button>
+      <button type="submit" class="btn btn-prim btn-success">Confirmar</button>
     </div>
   `
 
   resumoDiv.innerHTML = html
 }
-
+function voltarPasso() {
+  if (formStepsNum > 0) {
+    formStepsNum--;
+    updateFormSteps();
+    updateProgressbar();
+  }
+}
 // Coletar dados do formulário
 function coletarDadosFormulario() {
   const dados = {
